@@ -3,9 +3,9 @@ import React from 'react'
 const Login = (props) => {
     return (
         <div>
-            <span data-page='dashboard'>Dashboard</span>
-            <span data-page='profile'>My Profile</span>
-            <span data-page='new-currency'>Make a New Currency</span>
+            <form>
+                <input placeholder="Login Username"></input>
+            </form>
         </div>
     )
 }
