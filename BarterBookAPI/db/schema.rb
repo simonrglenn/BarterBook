@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_22_034540) do
+ActiveRecord::Schema.define(version: 2019_11_26_201105) do
 
   create_table "contracts", force: :cascade do |t|
-    t.integer "needed_id"
-    t.integer "offered_id"
+    t.integer "needed_currency_id"
+    t.integer "offered_currency_id"
     t.boolean "pending?"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2019_11_22_034540) do
     t.string "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -38,4 +39,3 @@ ActiveRecord::Schema.define(version: 2019_11_22_034540) do
   end
 
 end
-

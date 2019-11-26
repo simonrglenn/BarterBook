@@ -1,3 +1,10 @@
-export function toggleRegisteringUser(){
-    return {type: "Toggle_Registering_User"}
+export function LoginUser(payload){
+    return ({
+        type: "LoginUser",
+        payload: payload
+})
+}
+
+export function LogoutUser(){
+    return ({type: "LogoutUser"})
 }
