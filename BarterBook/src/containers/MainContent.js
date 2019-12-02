@@ -2,11 +2,11 @@ import React from 'react'
 import {connect} from 'react-redux'
 import CurrencyContainer from './CurrencyContainer'
 
-const MainPage = (props) => {
+const MainContent = (props) => {
     return(
         <div>
             <CurrencyContainer />
-            <h4>"Main Page"</h4>
+            <h4>"Main Content"</h4>
         </div>
     )
 }
@@ -25,4 +25,4 @@ const mdp = (dispatch) => {
     )
 }
 
-export default connect(msp,mdp)(MainPage)
+export default connect(msp,mdp)(MainContent)

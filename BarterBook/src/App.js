@@ -4,22 +4,18 @@ import './App.css';
 
 import LoginContainer from './containers/LoginContainer';
 import NavBar from "./components/NavBar"
-import MainPage from "./containers/MainPage"
 import SideBar from "./containers/SideBar"
+import MainContent from './containers/MainContent';
 
 const App = (props) => {
 	return (
-		<div className="App">
-			{props.loggedInUser
-			? 
-			<div id="meatNpotatoes"> 
-				< NavBar />
-				< SideBar />
-				< MainPage />
-			</div>
-			:
-				< LoginContainer />}
+		props.loggedInUser ? 
+		<div id="meatNpotatoes"> 
+			< NavBar />
+			< SideBar />
+			< MainContent />
 		</div>
+		: < LoginContainer />
 	)
 }
 

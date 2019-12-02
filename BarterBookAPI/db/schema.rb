@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_26_201105) do
+ActiveRecord::Schema.define(version: 2019_12_02_005847) do
 
   create_table "contracts", force: :cascade do |t|
     t.integer "needed_currency_id"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2019_11_26_201105) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"
+    t.boolean "listed"
   end
 
   create_table "users", force: :cascade do |t|

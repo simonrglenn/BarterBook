@@ -1,3 +1,3 @@
 class Contract < ApplicationRecord
-    belongs_to :currencies
+    has_and_belongs_to_many :currencies
 end

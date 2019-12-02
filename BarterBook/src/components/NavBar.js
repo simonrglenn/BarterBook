@@ -1,6 +1,7 @@
 import React from 'react'
 import SearchBar from './SearchBar'
 import {connect} from 'react-redux'
+// import {}
 
 const NavBar = (props) => {
     return (

@@ -4,13 +4,14 @@ import currency from '../components/Currency'
 
 const currencyContainer = (props) => {
     return(
-        "list of currency"
+        props.currencies.map
     )
 }
 
 const msp = (state) => {
     return(
         {
+            currencies: state.currencies
         }
     )
 }
